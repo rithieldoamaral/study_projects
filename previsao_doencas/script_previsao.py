@@ -22,6 +22,10 @@ nomes_caracteristicas = X.columns
 # Fazer previsões
 previsao = modelo.predict(X_teste)
 
+#Medir e Melhorar
+Medir=accuracy_score(y_teste,previsao)
+Medir
+
 # Fazer previsão para uma nova instância
 nova_instancia = [[22, 1]]
 previsao2 = modelo.predict(nova_instancia)
